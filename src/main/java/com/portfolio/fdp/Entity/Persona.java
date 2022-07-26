@@ -28,9 +28,6 @@ public class Persona {
     @Size(min = 1, max = 200, message = "Longitud exedida")
     private String imgProfile;
 
-    @Size(min = 1, max = 200, message = "Longitud exedida")
-    private String imgBanner;
-
     @Size( max = 50, message ="Longitud exedida")
     private String tituloPer;
 
@@ -43,11 +40,10 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(String name, String lastname, String imgProfile, String imgBanner, String titulo_per, String email, String phone) {
+    public Persona(String name, String lastname, String imgProfile, String titulo_per, String email, String phone) {
         this.name = name;
         this.lastname = lastname;
         this.imgProfile = imgProfile;
-        this.imgBanner = imgBanner;
         this.tituloPer = titulo_per;
         this.email = email;
         this.phone = phone;
@@ -83,14 +79,6 @@ public class Persona {
 
     public void setImgProfile(String imgProfile) {
         this.imgProfile = imgProfile;
-    }
-
-    public String getImgBanner() {
-        return imgBanner;
-    }
-
-    public void setImgBanner(String imgBanner) {
-        this.imgBanner = imgBanner;
     }
 
     public String getTituloPer() {

@@ -51,7 +51,7 @@ public class PersonaController {
         }
 
         Persona persona = new Persona(dtopersona.getName(), dtopersona.getLastname(), dtopersona.getImgProfile(),
-                                      dtopersona.getImgBanner(), dtopersona.getTituloPer(), 
+                                    dtopersona.getTituloPer(), 
                                       dtopersona.getEmail(), dtopersona.getPhone());
         sPersona.save(persona);
 
@@ -77,7 +77,6 @@ public class PersonaController {
         persona.setEmail(dtopersona.getEmail());
         persona.setPhone(dtopersona.getPhone());
         persona.setImgProfile(dtopersona.getImgProfile());
-        persona.setImgBanner(dtopersona.getImgBanner());
         
         sPersona.save(persona);
         return new ResponseEntity(new Mensaje("Perfil actualizado"), HttpStatus.OK);
