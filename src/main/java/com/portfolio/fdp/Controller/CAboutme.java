@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping({"sobremi"})
-@CrossOrigin(origins = "http://localHost:4200/")
+@CrossOrigin(origins = "https://portfoliofd-ap.web.app/")
 public class CAboutme {
     @Autowired SAboutme sAboutme;
     
