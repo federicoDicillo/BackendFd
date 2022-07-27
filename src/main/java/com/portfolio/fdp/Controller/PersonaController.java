@@ -82,7 +82,7 @@ public class PersonaController {
         return new ResponseEntity(new Mensaje("Perfil actualizado"), HttpStatus.OK);
     }
 
-   
+    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
         //valida si existe el id
