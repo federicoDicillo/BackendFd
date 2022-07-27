@@ -43,7 +43,7 @@ public class PersonaController {
         return new ResponseEntity(persona, HttpStatus.OK);
     }
 
- 
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody dtoPersona dtopersona) {
         if (StringUtils.isBlank(dtopersona.getName())) {
@@ -82,7 +82,7 @@ public class PersonaController {
         return new ResponseEntity(new Mensaje("Perfil actualizado"), HttpStatus.OK);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+   
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
         //valida si existe el id
