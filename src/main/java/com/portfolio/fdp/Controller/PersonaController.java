@@ -73,7 +73,7 @@ public class PersonaController {
         Persona persona = sPersona.getOne(id).get();
         persona.setName(dtopersona.getName());
         persona.setLastname(dtopersona.getLastname());
-        persona.setTitulo_per(dtopersona.getTituloPer());
+        persona.setTituloPer(dtopersona.getTituloPer());
         persona.setEmail(dtopersona.getEmail());
         persona.setPhone(dtopersona.getPhone());
         persona.setImgProfile(dtopersona.getImgProfile());

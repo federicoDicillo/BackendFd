@@ -40,11 +40,11 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(String name, String lastname, String imgProfile, String titulo_per, String email, String phone) {
+    public Persona(String name, String lastname, String imgProfile, String tituloPer, String email, String phone) {
         this.name = name;
         this.lastname = lastname;
         this.imgProfile = imgProfile;
-        this.tituloPer = titulo_per;
+        this.tituloPer = tituloPer;
         this.email = email;
         this.phone = phone;
     }
@@ -85,7 +85,7 @@ public class Persona {
         return tituloPer;
     }
 
-    public void setTitulo_per(String tituloPer) {
+    public void setTituloPer(String tituloPer) {
         this.tituloPer = tituloPer;
     }
 
