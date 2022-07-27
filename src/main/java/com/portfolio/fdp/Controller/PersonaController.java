@@ -43,7 +43,7 @@ public class PersonaController {
         return new ResponseEntity(persona, HttpStatus.OK);
     }
 
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+ 
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody dtoPersona dtopersona) {
         if (StringUtils.isBlank(dtopersona.getName())) {
