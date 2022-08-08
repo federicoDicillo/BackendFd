@@ -53,7 +53,7 @@ public class CEducation {
             return new ResponseEntity(new Mensaje("Ese estudio ya existe"), HttpStatus.BAD_REQUEST);
         }
         Study study = new Study(dtoeducation.getTitulo(), dtoeducation.getEscuela(), dtoeducation.getNivel(),
-                dtoeducation.getTiempo(), dtoeducation.getLocalidad());
+                dtoeducation.getTiempo());
         sEducation.save(study);
 
         return new ResponseEntity(new Mensaje("Estudio agregado"), HttpStatus.OK);
@@ -80,7 +80,6 @@ public class CEducation {
         study.setEscuela(dtoeducation.getEscuela());
         study.setNivel(dtoeducation.getNivel());
         study.setTiempo(dtoeducation.getTiempo());
-        study.setLocalidad(dtoeducation.getLocalidad());
 
         sEducation.save(study);
         return new ResponseEntity(new Mensaje("Estudio actualizado"), HttpStatus.OK);

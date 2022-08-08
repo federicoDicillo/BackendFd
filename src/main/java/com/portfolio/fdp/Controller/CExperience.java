@@ -52,7 +52,7 @@ public class CExperience {
         }
         
         Experience experiencia = new Experience(dtoexpe.getPuesto(), dtoexpe.getEmpresa(),
-                dtoexpe.getTiempo(),dtoexpe.getContacto());
+                dtoexpe.getTiempo());
         sExpe.save(experiencia);
 
         return new ResponseEntity(new Mensaje("Experiencia agregada"), HttpStatus.OK);
@@ -74,7 +74,6 @@ public class CExperience {
         experiencia.setPuesto(dtoexpe.getPuesto());
         experiencia.setEmpresa(dtoexpe.getEmpresa());
         experiencia.setTiempo(dtoexpe.getTiempo());
-        experiencia.setContacto(dtoexpe.getContacto());
 
         sExpe.save(experiencia);
         return new ResponseEntity(new Mensaje("Experiencia actualizado"), HttpStatus.OK);

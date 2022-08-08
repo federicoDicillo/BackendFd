@@ -26,18 +26,13 @@ public class Experience {
     @Size (max = 80)
     private String tiempo;
     
-    @NotNull
-    @Size (max=80)
-    private String contacto;
-
     public Experience() {
     }
 
-    public Experience(String puesto, String empresa, String tiempo, String contacto) {
+    public Experience(String puesto, String empresa, String tiempo) {
         this.puesto = puesto;
         this.empresa = empresa;
         this.tiempo = tiempo;
-        this.contacto = contacto;
     }
 
   
@@ -74,14 +69,7 @@ public class Experience {
         this.tiempo = tiempo;
     }
 
-    public String getContacto() {
-        return contacto;
-    }
 
-    public void setContacto(String contacto) {
-        this.contacto = contacto;
-    }
-        
     
     
     

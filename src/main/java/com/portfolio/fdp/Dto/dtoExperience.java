@@ -10,17 +10,14 @@ public class dtoExperience {
     private String empresa;
     @NotBlank
     private String tiempo;
-    @NotBlank
-    private String contacto;
 
     public dtoExperience() {
     }
 
-    public dtoExperience(String puesto, String empresa, String tiempo, String contacto) {
+    public dtoExperience(String puesto, String empresa, String tiempo) {
         this.puesto = puesto;
         this.empresa = empresa;
         this.tiempo = tiempo;
-        this.contacto = contacto;
     }
 
     public String getPuesto() {
@@ -47,13 +44,6 @@ public class dtoExperience {
         this.tiempo = tiempo;
     }
 
-    public String getContacto() {
-        return contacto;
-    }
-
-    public void setContacto(String contacto) {
-        this.contacto = contacto;
-    }
 
    
 }

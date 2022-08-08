@@ -12,18 +12,15 @@ public class dtoEducation {
     private String tiempo;
     @NotBlank
     private String nivel;
-    @NotBlank
-    private String localidad;
 
     public dtoEducation() {
     }
 
-    public dtoEducation(String titulo, String escuela, String tiempo, String nivel, String localidad) {
+    public dtoEducation(String titulo, String escuela, String tiempo, String nivel) {
         this.titulo = titulo;
         this.escuela = escuela;
         this.tiempo = tiempo;
         this.nivel = nivel;
-        this.localidad = localidad;
     }
 
     public String getTitulo() {
@@ -58,12 +55,6 @@ public class dtoEducation {
         this.nivel = nivel;
     }
 
-    public String getLocalidad() {
-        return localidad;
-    }
 
-    public void setLocalidad(String localidad) {
-        this.localidad = localidad;
-    }
 
 }

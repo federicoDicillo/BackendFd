@@ -33,19 +33,14 @@ public class Study {
     @Size (max=20)
     private String nivel;
     
-    @NotNull
-    @Size (max=20)
-    private String localidad;
-
     public Study() {
     }
 
-    public Study(String titulo, String escuela, String tiempo, String nivel, String localidad) {
+    public Study(String titulo, String escuela, String tiempo, String nivel) {
         this.titulo = titulo;
         this.escuela = escuela;
         this.tiempo = tiempo;
         this.nivel = nivel;
-        this.localidad = localidad;
     }
 
     
@@ -89,13 +84,6 @@ public class Study {
         this.nivel = nivel;
     }
 
-    public String getLocalidad() {
-        return localidad;
-    }
-
-    public void setLocalidad(String localidad) {
-        this.localidad = localidad;
-    }
-    
+   
     
 }
